@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace ParcialFriend.Models
 {
@@ -14,15 +11,24 @@ namespace ParcialFriend.Models
         AmigoDeInfancia,//4
         Pariente//5
 
-
-
     }
 
 
     public class JoseCalvimontesFriend
     {
-       [Required]
-        public int Name { get; set; }
-    
+        public string NickName  { get; set; }
+        
+
+        public int Birthdate { get; set; }
+        [Key]
+        public int FriendId { get; set; }
+        [Required]
+        public string Name { get; set; }
+       
+        [Required]
+        public FriendType Type { get; set; }
+
+      
+
     }
 }
