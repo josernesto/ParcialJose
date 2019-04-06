@@ -9,6 +9,6 @@ namespace APIParcialFriend.Models
 
         }
 
-        
+        public System.Data.Entity.DbSet<APIParcialFriend.Models.JoseCalvimontesFriend> JoseCalvimontesFriends { get; set; }
     }
 }
